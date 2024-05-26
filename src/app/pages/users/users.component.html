@@ -1,0 +1,15 @@
+<main class="flex flex-col gap-y-28">
+  <article id="card">
+    <p class="font-bold">Users</p>
+    <hr class="mb-10" />
+    <aside class="grid lg:grid-cols-4 gap-4 md:grid-cols-3 sm: grid-cols-2">
+      @if (users$ | async; as users) { @for (user of users; track user.Email) {
+      <app-card
+        [name]="user.LoginName"
+        [email]="user.Email"
+        [title]="user.Title"
+      />
+      } }
+    </aside>
+  </article>
+</main>
