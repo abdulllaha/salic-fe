@@ -18,4 +18,17 @@
     </section>
   </article>
 </main>
+} @else if(!isLoading) {
+<main class="bg-[#8641B6]">
+  <article class="flex gap-x-10 text-white p-4">
+      <div role="alert" class="alert alert-error w-1/4">
+        <span class="text-white text-ellipsis"> Error retrieving image</span>
+    </div>
+    <section class="flex flex-col justify-between">
+      <p>{{ title }}</p>
+      <p>{{ name }}</p>
+    </section>
+  </article>
+</main>
+
 }
