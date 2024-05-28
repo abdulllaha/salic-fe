@@ -4,7 +4,7 @@
 This is a Salic Technical assessment project.
 
 ## Development
-Angular 17 TypeScript, HTML5, CSS, Tailwind, nodejs 20, npm 10.1.0.
+Angular 17 TypeScript, HTML5, CSS, Tailwind, daisyui 4, nodejs 20, npm 10.1.0
 
 ## Instruction
 
