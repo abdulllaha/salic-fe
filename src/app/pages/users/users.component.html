@@ -3,11 +3,11 @@
     <p class="font-bold">Users</p>
     <hr class="mb-10" />
     <aside class="grid lg:grid-cols-4 gap-4 md:grid-cols-2 sm:grid-cols-1 ">
-      @if (users$ | async; as users) { @for (user of users; track user.Email) {
+      @if (users$ | async; as users) { @for (user of users; track user.id) {
       <app-card
-        [name]="user.LoginName"
-        [email]="user.Email"
-        [title]="user.Title"
+        [name]="user.name"
+        [email]="user.email"
+        [title]="user.title"
       />
       } @empty {
       <div role="alert" class="alert alert-error">

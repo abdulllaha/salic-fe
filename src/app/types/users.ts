@@ -3,19 +3,13 @@ export interface ResponseWrapper<T> {
 }
 
 export interface User {
-  Id: number;
-  IsHiddenInUI: boolean;
-  LoginName: string;
-  Title: string;
-  PrincipalType: number;
-  Email: string;
-  Expiration: string;
-  IsEmailAuthenticationGuestUser: boolean;
-  IsShareByEmailGuestUser: boolean;
-  IsSiteAdmin: boolean;
-  UserId: {
-    NameId: string;
-    NameIdIssuer: string;
+  id: number;
+  name: string;
+  email: string;
+  title: string;
+  otherId: {
+    id: string;
+    issuerId: string;
   };
-  UserPrincipalName: string;
+  partName: string;
 }
